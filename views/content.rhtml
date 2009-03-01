@@ -1,6 +1,6 @@
 <% if sidebar.delicious -%>
   <div id="delicious">
-    <h3><a href="http://<%=h sidebar.delicious.title %>"><%=h sidebar.delicious.title %></a></h3>
+    <h3><%=h sidebar.title %></h3>
     <% (groupdate ? sidebar.delicious.days : [{ :container => sidebar.delicious.items }]).each do |group| -%>
     <% if groupdate -%>
     <span class="date"><%=h group[:date].to_s.to_date.strftime("%b %d") %></span>

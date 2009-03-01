@@ -2,6 +2,7 @@ class DeliciousSidebar < Sidebar
   display_name "Del.icio.us"
   description 'Bookmarks from <a href="http://del.icio.us">del.icio.us</a>'
 
+  setting :title, 'Title', :label => 'Bar Title'
   setting :feed, nil, :label => 'Feed URL'
   setting :count, 10, :label => 'Items Limit'
   setting :groupdate,   false, :input_type => :checkbox, :label => 'Group links by day'
